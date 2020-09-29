@@ -157,6 +157,11 @@ export class Events extends React.Component {
                 </DynamicList>
               </div>
             )}
+            {numberOfUpcomingEvents === 0 && numberOfActiveEvents === 0 && (
+              <h2 className="no-events-message">
+                No events to be displayed at this time
+              </h2>
+            )}
           </div>
         </Fragment>
       );

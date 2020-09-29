@@ -149,6 +149,24 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <Events />
+
+        <div className="app-buttons-container">
+          <a
+            href="https://performer.myrequest.live/"
+            className="button primary performer-app-button"
+            target="_blank"
+          >
+            Performer App
+          </a>
+
+          <a
+            href="https://app.myrequest.live/events"
+            className="button primary requester-app-button"
+            target="_blank"
+          >
+            Requester App
+          </a>
+        </div>
       </div>
     </section>
 

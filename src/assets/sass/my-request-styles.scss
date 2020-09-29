@@ -96,6 +96,16 @@ div.mission-left {
   margin-left: 65px;
 }
 
+div.app-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+a.performer-app-button {
+  margin-right: 15px;
+}
+
 div.join-beta-button {
   align-self: center;
   margin-left: 34px;
@@ -109,6 +119,10 @@ img#copyright {
 .style3 {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
+}
+
+h2.no-events-message {
+  margin-bottom: 0px;
 }
 
 @include breakpoint('>=xlarge') {
@@ -137,5 +151,19 @@ img#copyright {
   img#my-request-logo {
     height: 140px;
     width: 256px;
+  }
+
+  div.app-buttons-container {
+    flex-direction: column;
+  }
+
+  a.performer-app-button {
+    margin-right: 0px;
+    align-self: center;
+  }
+
+  a.requester-app-button {
+    margin-top: 15px;
+    align-self: center;
   }
 }
