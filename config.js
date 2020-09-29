@@ -1,5 +1,6 @@
 module.exports = {
-  siteTitle: 'My Request', // <title>
+
+  siteTitle: 'My Request',
   manifestName: 'Spectral',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -8,7 +9,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/my-request-favicon.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
+  heading: 'My Request',
   subHeading:
     'Connecting Performers with their audience on a whole new frequency',
   // social
