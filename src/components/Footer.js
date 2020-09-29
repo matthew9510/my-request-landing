@@ -1,8 +1,13 @@
 import React from 'react';
 import config from '../../config';
+import copyrightImage from '../assets/images/softstack-factory-copyright.png';
+
 export default function Footer() {
   return (
     <footer id="footer">
+      <img src={copyrightImage} alt="copyright logo" id="copyright" />
+      <br />
+      <br />
       <ul className="icons">
         {config.socialLinks.map(social => {
           const { style, icon, name, url } = social;
@@ -14,12 +19,6 @@ export default function Footer() {
             </li>
           );
         })}
-      </ul>
-      <ul className="copyright">
-        <li>&copy; Spectral</li>
-        <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
       </ul>
     </footer>
   );

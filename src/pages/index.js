@@ -4,16 +4,38 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import Events from '../components/Events';
+
+import myRequestLogo from '../assets/images/my-request-logo.png';
+import halfNoteFill from '../assets/images/half-note-fill.svg';
+import eighthNoteFill from '../assets/images/eighth-note-fill.svg';
+import doubleEighthNoteFill from '../assets/images/double-eighth-note-fill.svg';
+import doubleEighthNoteWhite from '../assets/images/double-eighth-note-white.svg';
+
+import performerClientImage from '../assets/images/performer-client.png';
+import requesterClientTopUpImage from '../assets/images/requester-client-top-up.png';
+import requesterClientStreamImage from '../assets/images/requester-client-twitch-stream.png';
 import config from '../../config';
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
+        <img src={myRequestLogo} alt="My Request Logo" id="my-request-logo" />
+
+        <div className="align-center">
+          <div className="slogan-container">
+            <div className="left-slogan">
+              <img src={halfNoteFill} alt="half note" id="half-note" />
+            </div>
+            <div>
+              <p className="slogan">{config.subHeading}</p>
+            </div>
+            <div className="right-slogan">
+              <img src={eighthNoteFill} alt="eighth-note" id="eighth-note" />
+            </div>
+          </div>
+        </div>
+
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
@@ -33,86 +55,92 @@ const IndexPage = () => (
 
     <section id="one" className="wrapper style1 special">
       <div className="inner">
-        <header className="major">
-          <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
+        <header className="major header-margin-adjustments">
+          <div className="align-center">
+            <div className="mission-container">
+              <div className="mission-left">
+                <p>
+                  <strong>My Request</strong> aims to connect musicians with
+                  their audience by providing an interface which seamlessly
+                  allows the performer to manage and accept song requests during
+                  live performances.
+                </p>
+                <p>
+                  Through the use of a friction-less user experience, My Request
+                  grants performers to interact with their audience.
+                </p>
+                <p>
+                  My Request offers the ability to host virtual stream events
+                  alongside in-person events, and gives the performer a chance
+                  to get paid from their engaged audience.
+                </p>
+              </div>
+              <div className="mission-right">
+                <img
+                  src={doubleEighthNoteWhite}
+                  alt="double eighth note"
+                  id="double-eighth-note"
+                />
+              </div>
+            </div>
+          </div>
         </header>
-        <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul>
       </div>
     </section>
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={performerClientImage} alt="My Request performer client" />
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
+          <h2>Control is in the Performers Hands</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Only requests accepted to be played by the performer will be
+            presented to the audience. A pending requests filter allows the
+            performer to better manage requests to be played during live
+            performances.
+          </p>
+          <p>
+            Performers have the capability to control the sorting order of the
+            requests queue based on price or time.
+          </p>
+
+          <p>
+            In addition, the performer can override the queue order based on
+            personal preferences.
           </p>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <img
+            src={requesterClientTopUpImage}
+            alt="My Request Requester client presenting top up feature"
+          />
         </div>
         <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
+          <h2>Keeping Requesters in Mind</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Requesters can top-up funds of an existing song request to bump it's
+            original request queue order so that it can have a chance of being
+            played sooner.
           </p>
         </div>
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <img
+            src={requesterClientStreamImage}
+            alt="My Request Requester client presenting streaming capabilities"
+          />
         </div>
         <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
+          <h2>Streaming Integration</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            With Twitch stream integration, My Request makes it possible to host
+            live virtual events, in addition to working smoothly with in-person
+            events too.
           </p>
         </div>
       </section>
@@ -120,84 +148,25 @@ const IndexPage = () => (
 
     <section id="three" className="wrapper style3 special">
       <div className="inner">
-        <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
-        </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul>
+        <Events />
       </div>
     </section>
 
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
+          <h2>Interested in Joining My Request as a Performer?</h2>
+          <p>Feel free to send email to be part of the My Request beta.</p>
         </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
-          </li>
-        </ul>
+        <div className="actions join-beta-button">
+          <a
+            href="mailto: myrequest-beta@softstackfactory.com?subject=My Request Beta Access"
+            className="button secondary"
+            target="_blank"
+          >
+            Join the Beta
+          </a>
+        </div>
       </div>
     </section>
   </Layout>

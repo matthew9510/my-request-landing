@@ -1,0 +1,21 @@
+.event-container {
+  display: flex;
+  border: 2px solid #ec7c22;
+}
+
+.event-date {
+  align-self: center;
+  margin-right: 20px;
+  min-width: 70px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}

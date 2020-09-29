@@ -11,17 +11,23 @@
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/styles": "^4.10.0",
     "gatsby": "^2.20.2",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
     "gatsby-plugin-react-helmet": "^3.2.0",
     "gatsby-plugin-sass": "^2.2.0",
+    "moment": "^2.29.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0",
+    "react-moment": "^0.9.7",
     "react-scrollspy": "^3.4.2",
+    "react-window-dynamic-list": "^2.3.5",
+    "react-window-infinite-loader": "^1.0.5",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {

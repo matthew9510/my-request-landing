@@ -1,0 +1,141 @@
+@import 'libs/breakpoints';
+
+// Breakpoints.
+@include breakpoints(
+  (
+    xlarge: (
+      1281px,
+      1680px,
+    ),
+    large: (
+      981px,
+      1280px,
+    ),
+    medium: (
+      737px,
+      980px,
+    ),
+    small: (
+      481px,
+      736px,
+    ),
+    xsmall: (
+      null,
+      480px,
+    ),
+  )
+);
+
+img#my-request-logo {
+  position: relative;
+  bottom: 80px;
+  height: 170px;
+  width: 300px;
+}
+
+div.align-center {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+div.slogan-container,
+div.mission-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+div.left-slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div.right-slogan,
+div.mission-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+img#half-note {
+  height: 50px;
+  width: 40px;
+  padding-right: 3px;
+  position: relative;
+  bottom: 25px;
+  right: 10px;
+}
+
+img#eighth-note {
+  height: 50px;
+  width: 40px;
+  transform: rotate(5deg);
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+
+img#double-eighth-note {
+  height: 68px;
+  width: 60px;
+  position: relative;
+  transform: rotate(5deg);
+}
+
+p.slogan {
+  align-self: center;
+}
+
+header.header-margin-adjustments {
+  margin-bottom: 0px !important;
+}
+
+div.mission-left {
+  margin-left: 65px;
+}
+
+div.join-beta-button {
+  align-self: center;
+  margin-left: 34px;
+}
+
+img#copyright {
+  height: 100px;
+  width: 247px;
+}
+
+.style3 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+@include breakpoint('>=xlarge') {
+  img#my-request-logo {
+    height: 250px;
+    width: 441px;
+  }
+}
+
+@include breakpoint('<=medium') {
+  img#half-note {
+    right: 0px;
+  }
+
+  img#eighth-note {
+    left: 0px;
+  }
+
+  img#copyright {
+    height: 50px;
+    width: 122px;
+  }
+}
+
+@include breakpoint('<=small') {
+  img#my-request-logo {
+    height: 140px;
+    width: 256px;
+  }
+}
