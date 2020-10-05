@@ -12,6 +12,7 @@ import eighthNoteFill from '../assets/images/eighth-note-fill.svg';
 import doubleEighthNoteFill from '../assets/images/double-eighth-note-fill.svg';
 import doubleEighthNoteWhite from '../assets/images/double-eighth-note-white.svg';
 
+import performerImage from '../assets/images/performer.jpg';
 import performerClientImage from '../assets/images/performer-client.png';
 import requesterClientTopUpImage from '../assets/images/requester-client-top-up.png';
 import requesterClientStreamImage from '../assets/images/requester-client-twitch-stream.png';
@@ -53,45 +54,52 @@ const IndexPage = () => (
       </Scroll>
     </section>
 
-    <section id="one" className="wrapper style1 special">
-      <div className="inner">
-        <header className="major header-margin-adjustments">
-          <div className="align-center">
-            <div className="mission-container">
-              <div className="mission-left">
-                <p>
-                  <strong>My Request</strong> aims to connect musicians with
-                  their audience by providing an interface which seamlessly
-                  allows the performer to manage and accept song requests during
-                  live performances.
-                </p>
-                <p>
-                  Through the use of a friction-less user experience, My Request
-                  grants performers to interact with their audience.
-                </p>
-                <p>
-                  My Request offers the ability to host virtual stream events
-                  alongside in-person events, and gives the performer a chance
-                  to get paid from their engaged audience.
-                </p>
-              </div>
-              <div className="mission-right">
-                <img
-                  src={doubleEighthNoteWhite}
-                  alt="double eighth note"
-                  id="double-eighth-note"
-                />
-              </div>
-            </div>
+    <section className="spotlight primary-color">
+      <div className="image">
+        <img
+          id="performer"
+          src={performerImage}
+          alt="My Request Requester client presenting top up feature"
+        />
+      </div>
+      <div className="content">
+        <div className="mission-container">
+          <div className="mission-left">
+            <p>
+              <strong>My Request</strong> aims to connect musicians with their
+              audience by providing an interface which seamlessly allows the
+              performer to manage and accept song requests during live
+              performances.
+            </p>
+            <p>
+              Through the use of a friction-less user experience, My Request
+              grants performers to interact with their audience.
+            </p>
+            <p>
+              My Request offers the ability to host virtual stream events
+              alongside in-person events, and gives the performer a chance to
+              get paid from their engaged audience.
+            </p>
           </div>
-        </header>
+          <div className="mission-right">
+            <img
+              src={doubleEighthNoteWhite}
+              alt="double eighth note"
+              id="double-eighth-note"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <img src={performerClientImage} alt="My Request performer client" />
+          <img
+            src={performerClientImage}
+            alt="My Request performer client"
+            id="performer-client"
+          />
         </div>
         <div className="content">
           <h2>Control is in the Performers Hands</h2>

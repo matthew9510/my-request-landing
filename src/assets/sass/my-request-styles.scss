@@ -52,11 +52,14 @@ div.left-slogan {
   justify-content: flex-start;
 }
 
-div.right-slogan,
-div.mission-right {
+div.right-slogan {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+
+p.slogan {
+  align-self: center;
 }
 
 img#half-note {
@@ -77,23 +80,30 @@ img#eighth-note {
   left: 5px;
 }
 
+div.mission-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 img#double-eighth-note {
   height: 68px;
   width: 60px;
-  position: relative;
-  transform: rotate(5deg);
+  transform: rotate(-10deg);
 }
 
-p.slogan {
-  align-self: center;
+.primary-color {
+  background-color: #3f51b5 !important;
 }
 
-header.header-margin-adjustments {
-  margin-bottom: 0px !important;
+div.app-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
 }
 
-div.mission-left {
-  margin-left: 65px;
+a.performer-app-button {
+  margin-right: 15px;
 }
 
 div.app-buttons-container {
@@ -145,6 +155,10 @@ h2.no-events-message {
     height: 50px;
     width: 122px;
   }
+
+  div.mission-left {
+    margin-left: 60px;
+  }
 }
 
 @include breakpoint('<=small') {
@@ -165,5 +179,17 @@ h2.no-events-message {
   a.requester-app-button {
     margin-top: 15px;
     align-self: center;
+  }
+}
+
+@media screen and (min-width: 981px) and (max-width: 1375px) {
+  img#performer {
+    position: relative;
+    right: 30px;
+  }
+
+  img#performer-client {
+    position: relative;
+    left: 30px;
   }
 }
