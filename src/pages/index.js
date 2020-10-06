@@ -66,7 +66,7 @@ const IndexPage = () => (
           mgHeight={350}
           mgTouchOffsetX={-30}
           mgTouchOffsetY={-30}
-          zoomFactor={1.4
+          zoomFactor={1.4}
         />
       </div>
       <div className="content">
