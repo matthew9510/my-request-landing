@@ -64,9 +64,10 @@ const IndexPage = () => (
           src={performerImage}
           mgWidth={350}
           mgHeight={350}
-          mgTouchOffsetX={-30}
-          mgTouchOffsetY={-30}
+          mgTouchOffsetX={-40}
+          mgTouchOffsetY={0}
           zoomFactor={1.4}
+          mgShowOverflow={false}
           id="performer"
         />
       </div>
@@ -110,6 +111,7 @@ const IndexPage = () => (
             mgTouchOffsetX={-30}
             mgTouchOffsetY={-30}
             zoomFactor={0.6}
+            mgShowOverflow={false}
             alt="My Request performer client"
             id="performer-client"
           />
@@ -142,6 +144,7 @@ const IndexPage = () => (
             mgTouchOffsetX={-30}
             mgTouchOffsetY={-30}
             zoomFactor={0.6}
+            mgShowOverflow={false}
             alt="My Request Requester client presenting top up feature"
           />
         </div>
@@ -163,6 +166,7 @@ const IndexPage = () => (
             mgTouchOffsetX={-30}
             mgTouchOffsetY={-30}
             zoomFactor={0.6}
+            mgShowOverflow={false}
             alt="My Request Requester client presenting streaming capabilities"
           />
         </div>
