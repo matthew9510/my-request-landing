@@ -67,6 +67,7 @@ const IndexPage = () => (
           mgTouchOffsetX={-30}
           mgTouchOffsetY={-30}
           zoomFactor={1.4}
+          id="performer"
         />
       </div>
       <div className="content">
@@ -110,6 +111,7 @@ const IndexPage = () => (
             mgTouchOffsetY={-30}
             zoomFactor={0.6}
             alt="My Request performer client"
+            id="performer-client"
           />
         </div>
         <div className="content">
