@@ -17,6 +17,9 @@ import performerClientImage from '../assets/images/performer-client.png';
 import requesterClientTopUpImage from '../assets/images/requester-client-top-up.png';
 import requesterClientStreamImage from '../assets/images/requester-client-twitch-stream.png';
 import config from '../../config';
+
+import Magnifier from 'react-magnifier';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -55,11 +58,15 @@ const IndexPage = () => (
     </section>
 
     <section className="spotlight primary-color">
-      <div className="image">
-        <img
-          id="performer"
+      <div className="image remove-unnecessary-space">
+        <Magnifier
+          alt="Performer using the My Request performer client"
           src={performerImage}
-          alt="My Request Requester client presenting top up feature"
+          mgWidth={350}
+          mgHeight={350}
+          mgTouchOffsetX={-30}
+          mgTouchOffsetY={-30}
+          zoomFactor={1.4
         />
       </div>
       <div className="content">
@@ -94,11 +101,15 @@ const IndexPage = () => (
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
-        <div className="image">
-          <img
+        <div className="image remove-unnecessary-space">
+          <Magnifier
             src={performerClientImage}
+            mgWidth={350}
+            mgHeight={350}
+            mgTouchOffsetX={-30}
+            mgTouchOffsetY={-30}
+            zoomFactor={0.6}
             alt="My Request performer client"
-            id="performer-client"
           />
         </div>
         <div className="content">
@@ -121,9 +132,14 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
-          <img
+        <div className="image remove-unnecessary-space">
+          <Magnifier
             src={requesterClientTopUpImage}
+            mgWidth={350}
+            mgHeight={350}
+            mgTouchOffsetX={-30}
+            mgTouchOffsetY={-30}
+            zoomFactor={0.6}
             alt="My Request Requester client presenting top up feature"
           />
         </div>
@@ -137,9 +153,14 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image">
-          <img
+        <div className="image remove-unnecessary-space-twitch">
+          <Magnifier
             src={requesterClientStreamImage}
+            mgWidth={350}
+            mgHeight={350}
+            mgTouchOffsetX={-30}
+            mgTouchOffsetY={-30}
+            zoomFactor={0.6}
             alt="My Request Requester client presenting streaming capabilities"
           />
         </div>

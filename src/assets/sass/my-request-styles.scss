@@ -80,6 +80,14 @@ img#eighth-note {
   left: 5px;
 }
 
+div.remove-unnecessary-space {
+  margin-bottom: -9px;
+}
+
+div.remove-unnecessary-space-twitch {
+  margin-bottom: -7px;
+}
+
 div.mission-right {
   display: flex;
   flex-direction: column;
@@ -121,8 +129,29 @@ div.join-beta-button {
   margin-left: 34px;
 }
 
+a#copyright-anchor {
+  text-decoration: none !important;
+  border-bottom-color: transparent;
+}
+
+a#copyright-anchor:link {
+  text-decoration: none !important;
+}
+
+a#copyright-anchor:visited {
+  text-decoration: none !important;
+}
+
+a#copyright-anchor:hover {
+  text-decoration: none !important;
+}
+
+a#copyright-anchor:active {
+  text-decoration: none !important;
+}
+
 img#copyright {
-  height: 100px;
+  height: 90px;
   width: 247px;
 }
 
@@ -152,7 +181,7 @@ h2.no-events-message {
   }
 
   img#copyright {
-    height: 50px;
+    height: 45px;
     width: 122px;
   }
 

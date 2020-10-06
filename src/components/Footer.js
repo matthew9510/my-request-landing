@@ -5,7 +5,13 @@ import copyrightImage from '../assets/images/softstack-factory-copyright.png';
 export default function Footer() {
   return (
     <footer id="footer">
-      <img src={copyrightImage} alt="copyright logo" id="copyright" />
+      <a
+        href="https://www.softstackfactory.com"
+        target="_blank"
+        id="copyright-anchor"
+      >
+        <img src={copyrightImage} alt="copyright logo" id="copyright" />
+      </a>
       <br />
       <br />
       <ul className="icons">
