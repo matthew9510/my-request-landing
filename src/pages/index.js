@@ -20,6 +20,13 @@ import config from '../../config';
 
 import Magnifier from 'react-magnifier';
 
+import {
+  BrowserView,
+  MobileView,
+  isTablet,
+  isMobile,
+} from 'react-device-detect';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -57,20 +64,30 @@ const IndexPage = () => (
       </Scroll>
     </section>
 
-    <section className="spotlight primary-color">
-      <div className="image remove-unnecessary-space">
-        <Magnifier
-          alt="Performer using the My Request performer client"
+    <section id="one" className="spotlight primary-color">
+      {!isTablet && (
+        <BrowserView viewClassName="image">
+          <Magnifier
+            alt="Performer using the My Request performer client"
+            src={performerImage}
+            mgWidth={350}
+            mgHeight={350}
+            mgTouchOffsetX={-40}
+            mgTouchOffsetY={0}
+            zoomFactor={1.4}
+            mgShowOverflow={false}
+            id="performer"
+          />
+        </BrowserView>
+      )}
+      <MobileView viewClassName="image">
+        <img
           src={performerImage}
-          mgWidth={350}
-          mgHeight={350}
-          mgTouchOffsetX={-40}
-          mgTouchOffsetY={0}
-          zoomFactor={1.4}
-          mgShowOverflow={false}
+          alt="Performer using the My Request performer client"
           id="performer"
         />
-      </div>
+      </MobileView>
+
       <div className="content">
         <div className="mission-container">
           <div className="mission-left">
@@ -103,19 +120,28 @@ const IndexPage = () => (
 
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
-        <div className="image remove-unnecessary-space">
-          <Magnifier
+        {!isTablet && (
+          <BrowserView viewClassName="image">
+            <Magnifier
+              src={performerClientImage}
+              mgWidth={350}
+              mgHeight={350}
+              mgTouchOffsetX={-30}
+              mgTouchOffsetY={-30}
+              zoomFactor={0.6}
+              mgShowOverflow={false}
+              alt="My Request performer client"
+              id="performer-client"
+            />
+          </BrowserView>
+        )}
+        <MobileView viewClassName="image">
+          <img
             src={performerClientImage}
-            mgWidth={350}
-            mgHeight={350}
-            mgTouchOffsetX={-30}
-            mgTouchOffsetY={-30}
-            zoomFactor={0.6}
-            mgShowOverflow={false}
             alt="My Request performer client"
             id="performer-client"
           />
-        </div>
+        </MobileView>
         <div className="content">
           <h2>Control is in the Performers Hands</h2>
           <p>
@@ -136,18 +162,26 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image remove-unnecessary-space">
-          <Magnifier
+        {!isTablet && (
+          <BrowserView viewClassName="image">
+            <Magnifier
+              src={requesterClientTopUpImage}
+              mgWidth={350}
+              mgHeight={350}
+              mgTouchOffsetX={-30}
+              mgTouchOffsetY={-30}
+              zoomFactor={0.6}
+              mgShowOverflow={false}
+              alt="My Request Requester client presenting top up feature"
+            />
+          </BrowserView>
+        )}
+        <MobileView viewClassName="image">
+          <img
             src={requesterClientTopUpImage}
-            mgWidth={350}
-            mgHeight={350}
-            mgTouchOffsetX={-30}
-            mgTouchOffsetY={-30}
-            zoomFactor={0.6}
-            mgShowOverflow={false}
             alt="My Request Requester client presenting top up feature"
           />
-        </div>
+        </MobileView>
         <div className="content">
           <h2>Keeping Requesters in Mind</h2>
           <p>
@@ -158,18 +192,28 @@ const IndexPage = () => (
         </div>
       </section>
       <section className="spotlight">
-        <div className="image remove-unnecessary-space-twitch">
-          <Magnifier
-            src={requesterClientStreamImage}
-            mgWidth={350}
-            mgHeight={350}
-            mgTouchOffsetX={-30}
-            mgTouchOffsetY={-30}
-            zoomFactor={0.6}
-            mgShowOverflow={false}
-            alt="My Request Requester client presenting streaming capabilities"
-          />
-        </div>
+        {!isTablet && (
+          <BrowserView viewClassName="image">
+            <Magnifier
+              src={requesterClientStreamImage}
+              mgWidth={350}
+              mgHeight={350}
+              mgTouchOffsetX={-30}
+              mgTouchOffsetY={-30}
+              zoomFactor={0.6}
+              mgShowOverflow={false}
+              alt="My Request Requester client presenting streaming capabilities"
+            />
+          </BrowserView>
+        )}
+        {isMobile && isTablet && (
+          <MobileView viewClassName="image">
+            <img
+              src={requesterClientStreamImage}
+              alt="My Request Requester client presenting streaming capabilities"
+            />
+          </MobileView>
+        )}
         <div className="content">
           <h2>Streaming Integration</h2>
           <p>
