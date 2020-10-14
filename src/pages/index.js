@@ -206,7 +206,7 @@ const IndexPage = () => (
             />
           </BrowserView>
         )}
-        {isMobile && isTablet && (
+        {isMobile && (
           <MobileView viewClassName="image">
             <img
               src={requesterClientStreamImage}
