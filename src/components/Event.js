@@ -36,7 +36,7 @@ const styles = theme => ({
 class Event extends PureComponent {
   render() {
     const { classes } = this.props;
-    let baseUrl = 'https://app.myrequest.live//event-overview/';
+    let baseUrl = 'https://app.myrequest.live/event-overview/';
     baseUrl = baseUrl + this.props.event.id;
     return (
       <div style={this.props.style}>

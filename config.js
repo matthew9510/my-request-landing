@@ -1,7 +1,6 @@
 module.exports = {
-
   siteTitle: 'My Request',
-  manifestName: 'Spectral',
+  manifestName: 'My Request',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',

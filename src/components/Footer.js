@@ -1,7 +1,7 @@
 import React from 'react';
 import config from '../../config';
 import copyrightImage from '../assets/images/softstack-factory-copyright.png';
-
+import { Link } from 'gatsby';
 export default function Footer() {
   return (
     <footer id="footer">
@@ -26,6 +26,7 @@ export default function Footer() {
           );
         })}
       </ul>
+      <Link to="/PrivacyPolicy">Privacy Policy</Link>
     </footer>
   );
 }

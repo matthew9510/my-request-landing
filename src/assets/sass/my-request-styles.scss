@@ -26,6 +26,21 @@
   )
 );
 
+.header-container {
+  height: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+img.header-icon {
+  align-self: center;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 img#my-request-logo {
   position: relative;
   bottom: 80px;
@@ -222,5 +237,36 @@ h2.no-events-message {
   #performer-client {
     position: relative;
     left: 30px;
+  }
+}
+
+// privacy policy rules
+section.privacy-policy-section {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+div.privacy-policy {
+  p.revised-date {
+    color: rgba(38, 32, 32, 0.75) !important;
+    font-weight: 600;
+  }
+  h1 {
+    color: #2e3842;
+    font-size: 1.2em !important;
+  }
+
+  h2 {
+    color: rgba(38, 32, 32, 0.75) !important;
+    font-size: 1em !important;
+  }
+  table td {
+    padding: 20px 5px;
+  }
+}
+
+@include breakpoint('<=medium') {
+  div.privacy-policy {
+    padding-top: 20px;
   }
 }

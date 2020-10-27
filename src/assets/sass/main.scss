@@ -1644,9 +1644,9 @@ button,
   h1 {
     @include vendor('transition', 'opacity #{_duration(transitions)} ease');
     height: inherit;
-    left: 1.25em;
+    // left: 1.25em;
     line-height: inherit;
-    position: absolute;
+    position: relative;
     top: 0;
 
     a {
