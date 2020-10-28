@@ -1730,6 +1730,11 @@ button,
       @include vendor('pointer-events', 'none');
       opacity: 0;
     }
+
+    img {
+      @include vendor('pointer-events', 'none');
+      opacity: 0;
+    }
   }
 }
 

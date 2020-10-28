@@ -31,6 +31,7 @@
   display: flex;
   justify-content: flex-start;
   align-content: center;
+  border-bottom: none;
 }
 
 img.header-icon {
@@ -241,16 +242,28 @@ h2.no-events-message {
 }
 
 // privacy policy rules
-section.privacy-policy-section {
+section.privacy-policy-section,
+section.dependencies-section {
+
   padding-left: 1em;
   padding-right: 1em;
 }
 
-div.privacy-policy {
+div.privacy-policy,
+div.dependencies {
   p.revised-date {
     color: rgba(38, 32, 32, 0.75) !important;
     font-weight: 600;
   }
+
+  p#dependency-prompt {
+    margin-bottom: 1em;
+  }
+  
+  ul#dependency-list {
+    margin-left: 15px;
+  }
+  
   h1 {
     color: #2e3842;
     font-size: 1.2em !important;

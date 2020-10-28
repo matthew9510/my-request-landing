@@ -12,6 +12,9 @@ export default function SideBar({ fullMenu }) {
           <h1>My Request</h1>
         </Link>
       </div>
+      <div className={`${headerOpen ? 'is-menu-visible' : ' '}`}>
+        <Nav onMenuToggle={() => toggleHeader(!headerOpen)} />
+      </div>
       {/* <div className={`${headerOpen ? 'is-menu-visible' : ' '}`}>
         <Nav onMenuToggle={() => toggleHeader(!headerOpen)} />
       </div> */}

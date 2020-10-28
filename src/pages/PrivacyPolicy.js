@@ -5,19 +5,11 @@ import myRequestMiniLogo from '../assets/images/my-request-mini-logo-white.png';
 
 const IndexPage = () => (
   <Layout fullMenu>
-    <header id="header">
-      <div>
-        <Link className="header-container" to="/">
-          <img src={myRequestMiniLogo} className="header-icon"></img>
-          <h1>My Request</h1>
-        </Link>
-      </div>
-    </header>
     <article id="main">
       <section className="wrapper style5 privacy-policy-section" id="top">
         <div className="inner privacy-policy">
           <a href="/">
-            <span className="fas fa-arrow-left "></span> back
+            <span className="fas fa-arrow-left "></span> Home
           </a>
 
           <br />
@@ -641,7 +633,7 @@ const IndexPage = () => (
           <br />
 
           <a href="/">
-            <span className="fas fa-arrow-left "></span> back
+            <span className="fas fa-arrow-left "></span> Home
           </a>
         </div>
       </section>

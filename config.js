@@ -7,7 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/my-request-favicon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
+  // pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'My Request',
   subHeading:
     'Connecting Performers with their audience on a whole new frequency',
