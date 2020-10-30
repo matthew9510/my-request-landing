@@ -26,6 +26,10 @@
   )
 );
 
+.max-link-spanning {
+  display: inline-block;
+}
+
 .header-container {
   height: 3em;
   display: flex;
@@ -244,7 +248,6 @@ h2.no-events-message {
 // privacy policy rules
 section.privacy-policy-section,
 section.dependencies-section {
-
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -259,11 +262,11 @@ div.dependencies {
   p#dependency-prompt {
     margin-bottom: 1em;
   }
-  
+
   ul#dependency-list {
     margin-left: 15px;
   }
-  
+
   h1 {
     color: #2e3842;
     font-size: 1.2em !important;

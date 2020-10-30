@@ -64,6 +64,9 @@ const IndexPage = () => (
       </Scroll>
     </section>
 
+    {/* Keep this empty div below to preserve positioning of images below */}
+    <div id="empty-for-positioning-of-images-below"></div>
+
     <section id="one" className="spotlight primary-color">
       {!isTablet && (
         <BrowserView viewClassName="image">
