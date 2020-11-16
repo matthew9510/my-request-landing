@@ -260,7 +260,7 @@ const IndexPage = () => (
         </header>
         <div className="actions join-beta-button">
           <a
-            href="mailto: myrequest-beta@softstackfactory.com?subject=My Request Beta Access"
+            href="mailto: help@ssflabs.com?subject=My Request Beta Access"
             className="button secondary"
             target="_blank"
           >

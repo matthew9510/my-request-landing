@@ -17,8 +17,7 @@ module.exports = {
       style: 'solid',
       icon: 'fa-envelope',
       name: 'Email',
-      url:
-        'mailto: myrequest-beta@softstackfactory.com?subject=My Request Beta Access',
+      url: 'mailto: help@ssflabs.com?subject=My Request Beta Access',
     },
     {
       style: 'brands',
