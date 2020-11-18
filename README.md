@@ -34,6 +34,26 @@ npm install
 gatsby develop
 ```
 
+## Staging environments
+
+### Setup the desired environments
+
+In the root of the app (`/`) create specific environment files
+
+i.e.
+
+- **.env.development**
+- **.env.production**
+
+  Make sure .env.\* is in your root folder
+
+#### To develop using those environment files
+
+In shell run a command with similar syntax based on your staging name:
+
+- `> GATSBY_ACTIVE_ENV=development npm run develop`
+- `> GATSBY_ACTIVE_ENV=development npm run develop`
+
 ### Personalization
 
 Edit `config.js` to put up your details

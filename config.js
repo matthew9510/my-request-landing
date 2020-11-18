@@ -17,7 +17,7 @@ module.exports = {
       style: 'solid',
       icon: 'fa-envelope',
       name: 'Email',
-      url: 'mailto: help@ssflabs.com?subject=My Request Beta Access',
+      url: process.env.HELP_EMAIL_LINK,
     },
     {
       style: 'brands',

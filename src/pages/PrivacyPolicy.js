@@ -500,7 +500,11 @@ const IndexPage = () => (
           <p>
             To exercise the access, data portability, and deletion rights
             described above, please submit a verifiable consumer request to us
-            by email at <a href="mailto:help@SSFLabs.net">help@SSFLabs.net</a>.
+            by email at{' '}
+            <a href={'mailto:' + process.env.HELP_EMAIL_ADDRESS}>
+              {process.env.HELP_EMAIL_ADDRESS}
+            </a>
+            .
           </p>
           <p>
             Only you or a person registered with the California Secretary of
@@ -621,7 +625,11 @@ const IndexPage = () => (
             Privacy Policy, the ways in which we collect and use your personal
             information, your choices and rights regarding such use, or wish to
             exercise your rights under California law, you may contact us via
-            email at <a href="mailto:help@SSFLabs.net">help@SSFLabs.net</a>.
+            email at{' '}
+            <a href={'mailto:' + process.env.HELP_EMAIL_ADDRESS}>
+              {process.env.HELP_EMAIL_ADDRESS}
+            </a>
+            .
           </p>
 
           <p className="revised-date">Updated: October 27, 2020</p>

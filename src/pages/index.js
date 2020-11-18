@@ -1,5 +1,5 @@
 import React from 'react';
-
+import config from '../../config';
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
@@ -16,7 +16,6 @@ import performerImage from '../assets/images/performer.jpg';
 import performerClientImage from '../assets/images/performer-client.png';
 import requesterClientTopUpImage from '../assets/images/requester-client-top-up.png';
 import requesterClientStreamImage from '../assets/images/requester-client-twitch-stream.png';
-import config from '../../config';
 
 import Magnifier from 'react-magnifier';
 
@@ -260,7 +259,7 @@ const IndexPage = () => (
         </header>
         <div className="actions join-beta-button">
           <a
-            href="mailto: help@ssflabs.com?subject=My Request Beta Access"
+            href={process.env.HELP_EMAIL_LINK}
             className="button secondary"
             target="_blank"
           >
