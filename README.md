@@ -1,16 +1,16 @@
-# gatsby-starter-spectral
+# My Request Landing 
 
-Gatsby.js V2 starter template based on Spectral by HTML5 UP
+Built using Gatsby.js V2 starter template based on Spectral by HTML5 UP [gatsby-starter-spectral](https://github.com/anubhavsrivastava/gatsby-starter-spectral.git)
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
-![Screenshot](./src/assets/img/screenshot.jpg)
+Check online preview [here](https://my-request-landing.netlify.app)
 
-Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-spectral/)
-
-## Screenshot
-
-![Screenshot](./src/assets/img/demo.png)
+## Screenshots
+![Screenshot-1](./src/assets/img/screenshot-1.png)
+![Screenshot-2](./src/assets/img/Screenshot-2.png)
+![Screenshot-3](./src/assets/img/Screenshot-3.png)
+![Screenshot-4](./src/assets/img/Screenshot-4.png)
 
 ## Install
 

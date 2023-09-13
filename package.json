@@ -1,14 +1,13 @@
 {
-  "name": "gatsby-starter-spectral",
+  "name": "my-request-landing",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Spectral by HTML5 UP",
+  "description": "Landing page for My Request App",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-spectral.git"
+    "url": "git+ https://github.com/matthew9510/my-request-landing.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Matthew Hess"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -53,7 +52,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-spectral/issues"
+    "url": "https://github.com/matthew9510/my-request-landing.git/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-spectral#readme"
+  "homepage": " https://github.com/matthew9510/my-request-landing.git#readme"
 }
